@@ -1,0 +1,15 @@
+header{
+    background-color: var(--Black1);
+    height: 64px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header span{
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--White);
+}

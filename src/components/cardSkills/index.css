@@ -1,0 +1,45 @@
+.skillsContainer{
+    background-color: var(--Light2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.skillsContainer .left{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    justify-items: flex-start;
+}
+.skillsContainer .left .imgMask{
+    background-color: var(--Black3);
+    width: 54px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 8px;
+}
+.skillsContainer .left .imgMask img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.skillsContainer .left h2{
+    color: var(--Black3);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skillsContainer .right{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.skillsContainer .right svg{
+    color: var(--Light3);
+}

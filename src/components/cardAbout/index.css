@@ -1,0 +1,89 @@
+.AboutContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Black4);
+    width: 100%;
+    border-radius: 15px;
+    padding: 16px;
+    gap: 12px;
+}
+
+.AboutContainer .legend{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.AboutContainer .legend svg{
+    font-size: 30px;
+}
+.AboutContainer .legend button:hover{
+    transform: scale(1);
+}
+.AboutContainer .legend .options{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.AboutContainer .legend .options button:hover{
+    transform: scale(1.5);
+}
+
+.moreOption{
+    position: absolute;
+    background-color: var(--White);
+    width: 200px;
+    right: 0;
+    top:0;
+}
+.moreOption button{
+    padding: 16px;
+    width: 100%;
+    border: solid 1px var(--Light1);
+    color: var(--Light3);
+    
+}
+.moreOption button:hover{
+    transform: scale(1);
+    background-color: var(--Light3);
+    color: var(--White);
+}
+
+.AboutContainer img{
+    width: 56px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    background-color: var(--Light3);
+    border-radius: 100%;
+}
+
+.AboutContainer .infos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.AboutContainer .infos h3{
+    color: var(--White);
+    font-size: 18px;
+}
+
+.AboutContainer .infos textarea{
+    color: var(--White);
+    border: solid 1px var(--Light1);
+    padding: 4px;
+    border-radius: 4px;
+}
+.AboutContainer .infos textarea:disabled{
+    color: var(--Light1);
+    border: none;
+}
+.AboutContainer .infos input{
+    color: var(--White);
+    border: solid 1px var(--Light1);
+    padding: 4px;
+    border-radius: 4px;
+}
+.AboutContainer .infos input:disabled{
+    color: var(--Light1);
+    border: none;
+}

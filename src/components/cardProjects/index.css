@@ -1,0 +1,64 @@
+.ProjectContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Black4);
+    width: 100%;
+    border-radius: 5px;
+    padding: 16px;
+    gap: 12px;
+}
+
+.ProjectContainer .legend{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.ProjectContainer .legend svg{
+    font-size: 30px;
+}
+.ProjectContainer .legend button:hover{
+    transform: scale(1);
+}
+.ProjectContainer .legend .options{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.ProjectContainer .legend .options button:hover{
+    transform: scale(1.5);
+}
+
+.ProjectContainer .moreOption{
+    position: absolute;
+    background-color: var(--White);
+    width: 200px;
+    right: 0;
+    top:0;
+}
+.moreOption button{
+    padding: 16px;
+    width: 100%;
+    border: solid 1px var(--Light1);
+    color: var(--Light3);
+    
+}
+.moreOption button:hover{
+    transform: scale(1);
+    background-color: var(--Light3);
+    color: var(--White);
+}
+
+.ProjectContainer img{
+    width: 50%;
+    aspect-ratio: 16/9;
+    object-fit: cover; 
+}
+
+.ProjectContainer a {
+    text-decoration: none;
+    color: var(--Light3);
+}
+.moreOption, button:hover a{
+    color: var(--White);
+}

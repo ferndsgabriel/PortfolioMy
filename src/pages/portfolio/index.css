@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 36px 16px;
+    margin: auto;
+    max-width:1024px ;
+    gap: 46px;
+}
+
+.sectionCard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.sectionCard .legend{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sectionCard .cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.sectionAbout{
+    width: 100%;
+}
+
+.sectionCard .cardsProjects{
+    display: flex;
+    gap: 4px;
+    overflow: auto;
+}
+
+.sectionCard .buttonLeft{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--Light3);
+    z-index: 99;
+    padding: 8px;
+    border-radius: 100%;
+    left: 0;
+}
+
+.sectionCard .buttonRight{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--Light3);
+    z-index: 99;
+    padding: 8px;
+    border-radius: 100%;
+    right: 0;
+}
+
+.sizeCardProjects{
+    flex-shrink: 0;
+}

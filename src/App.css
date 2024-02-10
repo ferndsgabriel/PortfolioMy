@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: mainRegular;
+  src: url("../public/Kadwa-Regular.ttf");
+}
+body{
+  color: var(--Light1);
+  background-color: var(--Black2);
+  font-family: mainRegular -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+}
+:root{
+  --Black1:#141414;
+  --Black2:#1D1D1D;
+  --Black3:#141414;
+  --Black4:#414141;
+  --Light1:#C8C8C8;
+  --Light2:#D2D1D1;
+  --Light3:#6D6D6D;
+  --White:#ffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  color: var(--White);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button, input, textarea{
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+button{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+button:hover{
+  transform: scale(1.5);
+}
+svg{
+  color: var(--White);
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+img{
+  user-select: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea{
+  border: none;
+  resize: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  height: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px
+}
+::-webkit-scrollbar-thumb {
+  background-color:var(--Black4);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--Light3)
+}
+
+.noScroll::-webkit-scrollbar {
+  width: 2px;
+  background-color: transparent;
+}
+.noScroll::-webkit-scrollbar-thumb {
+  width: 2px;
+  background-color: transparent
+}
+.noScroll::-webkit-scrollbar-thumb:hover {
+  width: 2px;
+  background-color: transparent;
 }

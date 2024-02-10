@@ -1,0 +1,46 @@
+.contactsContainer{
+    background-color: var(--Light2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.contactsContainer .left{
+    display: flex;
+    align-items: start;
+    gap: 2px;
+    justify-items: flex-start;
+    flex-direction: column;
+}
+
+.contactsContainer .left h2{
+    color: var(--Black3);
+    font-size: 20px;
+    font-weight: bold;
+}
+.contactsContainer .left span{
+    color: var(--Light3);
+    font-weight: bold;
+    font-size: 12px;
+}
+.contactsContainer .left a{
+    color: var(--Light3);
+    font-size: 14px;
+    margin-top: 6px;
+    transition: 0.4s ease all;
+}
+.contactsContainer .left a:hover{
+    color: var(--Black3);
+}
+
+.contactsContainer .right{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.contactsContainer .right svg{
+    color: var(--Light3);
+}
