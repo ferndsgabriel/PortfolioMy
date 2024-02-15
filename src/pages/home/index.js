@@ -10,7 +10,7 @@ export default function Home(){
     const handleLogin = async (e) => {
         e.preventDefault();
         if (!pass){
-            toast.warning('Digite sua senha.');
+            toast.warning('Please enter your password.');
             return;
         }
         await Login(pass);
@@ -19,8 +19,8 @@ export default function Home(){
         <main className="homeContainer">
             <h1>Portfólio</h1>
             <form onSubmit={handleLogin}>
-                <input type="password" placeholder="Digite a senha" value={pass} onChange={(e)=>setPass(e.target.value)}/>
-                <button type="submit">Entrar</button>
+                <input type="password" placeholder="Your password" value={pass} onChange={(e)=>setPass(e.target.value)}/>
+                <button type="submit">Login</button>
             </form>
         </main>
     )

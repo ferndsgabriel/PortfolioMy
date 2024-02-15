@@ -2,6 +2,7 @@ import axios from "axios";
 import { parseCookies } from "nookies";
 
 export const baseUrl = 'https://portfbackend.vercel.app';
+//export const baseUrl = 'http://localhost:3333';
 
 export const SetupApi = (ctx = undefined) => {
     let cookies = parseCookies(ctx);

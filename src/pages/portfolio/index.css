@@ -24,7 +24,6 @@
 .sectionCard .cards{
     display: flex;
     flex-direction: column;
-    gap: 1px;
 }
 
 .sectionAbout{
@@ -60,5 +59,22 @@
 }
 
 .sizeCardProjects{
-    flex-shrink: 0;
+    gap: 12px;
+    display: flex;
+}
+.divProjects{
+    width: 400px;
+    height: 100%;
+}
+
+.singout{
+    margin-top: 120px;
+}
+.singout button{
+    color: var(--Light3);
+}
+
+.singout button:hover{
+    transform: scale(1);
+    color: var(--Whire);
 }

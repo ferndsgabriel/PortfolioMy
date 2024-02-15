@@ -13,11 +13,15 @@ export default function CardContacts ({redirect, name, boolean, deleteContacts, 
                     <span>Phone: no</span>
 
                 )}
-                <a href={redirect} target="_blank">{redirect}</a>
+                {boolean?(
+                    <a href={`tel:${redirect}`} target="_blank">{redirect}</a>
+                ):(
+                    <a href={redirect} target="_blank">{redirect}</a>
+                )}
             </div>
             <div className="right">
-                <button onClick={deleteContacts}><MdModeEdit/></button>
-                <button onClick={updateContacts}><BiTrashAlt /></button>
+                <button onClick={updateContacts}><MdModeEdit/></button>
+                <button onClick={deleteContacts}><BiTrashAlt /></button>
             </div>
         </article>
     )

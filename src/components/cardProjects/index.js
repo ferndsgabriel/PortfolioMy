@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 
 import { RiMore2Fill } from "react-icons/ri";
 
-export default function CardProjets({name, url,description, git, deploy}){
+export default function CardProjets({name, url,description, git, deploy, deleteProjects, editProjects}){
     const [disabledInput, setDisabledInput] = useState(true);
     const [openMore, setOpenMore] = useState(false);
     const refOptions = useRef (null);
@@ -13,10 +13,6 @@ export default function CardProjets({name, url,description, git, deploy}){
         setOpenMore(true);
     }
     
-    function changeDisabled () {
-        setOpenMore(false);
-        setDisabledInput(false)
-    }
 
     useEffect(() => {
         const thereClick = (e) => {
@@ -49,18 +45,16 @@ export default function CardProjets({name, url,description, git, deploy}){
 
                 {openMore?(
                     <span className="moreOption" ref={refOptions}>
-                        <button><a href={git}>GitHub</a></button>
-                        <button><a href={deploy}>Deploy</a></button>
-                        <button>Deletar</button>
-                        <button onClick={changeDisabled}>Editar</button>
-                        <button onClick={()=>setOpenMore(false)}>Cancelar</button>
+                        <button><a href={git} target="_blank">GitHub</a></button>
+                        <button><a href={deploy} target="_blank">Deploy</a></button>
+                        <button onClick={deleteProjects}>Delete</button>
+                        <button onClick={editProjects}>Edit</button>
                     </span>
                 ):null}
             </div>
 
             <img src={url} alt={name}/>
-
-            <p>{description}</p>
+            <p >{description}</p>
         </article>
     )
 }

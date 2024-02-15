@@ -2,7 +2,7 @@ import "./index.css"
 export default function Header ({value}){
     return(
         <header>
-            <span>{value}</span>
+            <span translate="no">{value}</span>
         </header>
     )
 } 

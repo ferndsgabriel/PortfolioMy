@@ -12,8 +12,8 @@ export default function CardSkills ({url, name, deleteSkill, updateSkill}){
                 <h2 translate="no">{name}</h2>
             </div>
             <div className="right">
-                <button onClick={deleteSkill}><MdModeEdit/></button>
-                <button onClick={updateSkill}><BiTrashAlt /></button>
+                <button onClick={updateSkill}><MdModeEdit/></button>
+                <button onClick={deleteSkill}><BiTrashAlt /></button>
             </div>
         </article>
     )

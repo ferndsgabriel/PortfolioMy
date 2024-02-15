@@ -25,7 +25,7 @@ export const Gmodal = ({ isOpen, onClose, children, className }) => {
     window.addEventListener('keydown', escClose);
 
     return (
-    <div className={styles.overlay} onClick={clickClose} ref={overlayRef}>
+    <div className='overlay' onClick={clickClose} ref={overlayRef}>
         <div className={className} ref={mainRef}>
             {children}
         </div>

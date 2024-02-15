@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 8px;
+    border-bottom: var(--Black4) solid 2px;
 }
 
 .skillsContainer .left{
@@ -13,7 +14,7 @@
     justify-items: flex-start;
 }
 .skillsContainer .left .imgMask{
-    background-color: var(--Black3);
+    background-color: var(--Light1);
     width: 54px;
     aspect-ratio: 1/1;
     display: flex;

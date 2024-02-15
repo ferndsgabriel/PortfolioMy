@@ -12,6 +12,7 @@ body{
   color: var(--Light1);
   background-color: var(--Black2);
   font-family: mainRegular -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  word-wrap: break-word;
 
 }
 :root{
@@ -40,10 +41,14 @@ button{
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: 0.4s ease;
+  transition: 0.4s ease all;
 }
 button:hover{
   transform: scale(1.5);
+}
+button:disabled{
+  opacity: 0.70;
+  cursor: not-allowed;
 }
 svg{
   color: var(--White);
@@ -60,7 +65,6 @@ textarea{
   padding: 0;
   margin: 0;
   border: none;
-  height: auto;
 }
 
 ::-webkit-scrollbar {
@@ -85,4 +89,124 @@ textarea{
 .noScroll::-webkit-scrollbar-thumb:hover {
   width: 2px;
   background-color: transparent;
+}
+
+
+.modalContainer{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 480px;
+  padding: 16px;
+  border-radius: 5px;
+  gap: 24px;
+}
+.modalContainer .modalTop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: var(--Light1) solid 1px;
+}
+.modalContainer .modalTop h2, .modalContainer .modalTop svg{
+  color: var(--Black3);
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.modalContainer form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.modalContainer form .legendDelete{
+  color: var(--Black3);
+  font-size: 18px;
+}
+.modalContainer form .labelInput{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+.modalContainer form .labelInput span{
+  font-size: 14px;
+  color: var(--Black3);
+}
+.modalContainer form .labelInput input{
+  background-color: var(--Light1);
+  padding: 16px;
+  border-radius: 5px;
+}
+.modalContainer form .labelInput textarea{
+  background-color: var(--Light1);
+  padding: 16px;
+  border-radius: 5px;
+  height: 80px
+}
+.modalContainer form .labelInputFile{
+  width: 50px;
+}
+.modalContainer form .labelInputFile input[type='file']{
+  display: none;
+}
+.modalContainer form svg{
+  font-size: 24px;
+  color: var(--Light3);
+}
+.modalContainer form .modalCheckArea{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.modalContainer form .modalCheckArea .styleInput{
+  display: block;
+  background-color: var(--Light2);
+  width: 16px;
+  aspect-ratio: 1/1;
+  border-radius: 2px;
+}
+.modalContainer form .modalCheckArea span{
+  color: var(--Light3);
+}
+.modalContainer form .modalCheckArea input[type='checkbox']{
+  display: none;
+}
+.modalContainer form .modalCheckArea input[type='checkbox']:checked ~ .styleInput {
+  background-color: var(--Light3)
+}
+.modalContainer form .buttonArea{
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-top: 16px;
+}
+.modalContainer form .buttonArea button{
+  background-color: var(--Light3);
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: var(--White);
+}
+.modalContainer form .buttonArea button:hover{
+  transform: scale(1);
+  background-color: var(--Black4);
+}
+.modalContainer form .preview{
+  width: 48px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  margin-top: 16px;
+}
+.modalContainer form .previewProjects{
+  width: 200px;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  margin-top: 16px;
 }
