@@ -3,8 +3,6 @@
 ### Portfolio control  ✍
 
 
-[![Blog](https://img.shields.io/website?label=Deploy&style=for-the-badge&url=https://salaocondo.vercel.app/)](https://salaocondo.vercel.app/)
-
 <div>
     <h2>About 🚨</h2>
     <p>
